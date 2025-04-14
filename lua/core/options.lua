@@ -5,6 +5,7 @@
 -- Set the leader key
 vim.g.mapleader = " "
 
+-- Tabs --
 -- Set amount to spaces tab creates
 vim.opt.softtabstop = 4
 
@@ -15,7 +16,13 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
 -- Set word wrap
-vim.opt.wrap = true
+vim.opt.wrap = false
+
+-- Search Options --
+-- Ignore case
+vim.opt.ignorecase = true;
+-- Set smartcase
+vim.opt.smartcase = true;
 
 -- Transparent background
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

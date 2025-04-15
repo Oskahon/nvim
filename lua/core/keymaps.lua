@@ -18,3 +18,16 @@ vim.keymap.set('n', '<leader>bo', ':silent! :%bd|edit #<CR>:silent! bd #<CR>', {
 -- Clear Highlights
 vim.keymap.set('n', '<leader>l', ':nohl<CR>', { silent = true, desc = 'clear highlights' })
 
+-- Center window when navigating
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', 'n', 'nzz')
+vim.keymap.set('n', 'N', 'Nzz')
+
+-- Navigate quickfix list
+vim.keymap.set('n', '[c', ':cnext<CR>zz', { silent = true })
+vim.keymap.set('n', ']c', ':cprev<CR>zz', { silent = true })
+vim.keymap.set('n', '<leader>co', ':copen<CR>', { silent = true })
+vim.keymap.set('n', '<leader>cc', ':cclose<CR>', { silent = true })
+vim.keymap.set('n', '<leader>cl', ':cfirst<CR>zz', { silent = true })
+vim.keymap.set('n', '<leader>cf', ':clast<CR>zz', { silent = true })

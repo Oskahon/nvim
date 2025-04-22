@@ -13,8 +13,8 @@ vim.opt.encoding = "utf-8"
 vim.opt.syntax = "on"
 
 -- Linenumbers
-vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.number = false
+vim.opt.relativenumber = false
 
 -- Scrolling Offset
 vim.opt.scrolloff = 8

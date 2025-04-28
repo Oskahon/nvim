@@ -24,6 +24,9 @@ vim.opt.sidescrolloff = 8 -- Same for horizontal scrolling
 vim.opt.signcolumn = "number"
 
 -- [[ Tabs and Indentation ]]
+-- Set tabstop
+vim.opt.tabstop = 4
+
 -- Set amount to spaces tab creates
 vim.opt.softtabstop = 4
 

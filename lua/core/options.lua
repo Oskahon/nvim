@@ -13,8 +13,8 @@ vim.opt.encoding = "utf-8"
 vim.opt.syntax = "on"
 
 -- Linenumbers
-vim.opt.number = false
-vim.opt.relativenumber = false
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- Scrolling Offset
 vim.opt.scrolloff = 8
@@ -68,4 +68,3 @@ vim.opt.wrap = false
 -- Transparent background
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-

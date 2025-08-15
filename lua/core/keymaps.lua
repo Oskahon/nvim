@@ -39,3 +39,6 @@ vim.keymap.set('o', 'aq', 'a"', { noremap = true, silent = true })
 -- Select inside and outside of double quotes
 vim.keymap.set('x', 'iq', 'i"', { noremap = true, silent = true })
 vim.keymap.set('x', 'aq', 'a"', { noremap = true, silent = true })
+
+-- :find
+vim.keymap.set('n', '<leader>f', ':fin ')

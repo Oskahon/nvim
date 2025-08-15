@@ -68,3 +68,7 @@ vim.opt.wrap = false
 -- Transparent background
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+-- Set path to ** for :find
+-- This might cause issues with larger folder structures?
+vim.opt.path = "**"

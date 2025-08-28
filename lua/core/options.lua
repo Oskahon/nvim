@@ -16,6 +16,9 @@ vim.opt.syntax = "on"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+-- Highlight the linenumber your cursor is on
+vim.o.cursorline = true
+
 -- Scrolling Offset
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8 -- Same for horizontal scrolling

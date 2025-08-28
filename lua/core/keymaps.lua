@@ -17,6 +17,7 @@ vim.keymap.set('n', '<leader>bo', ':silent! :%bd|edit #<CR>:silent! bd #<CR>', {
 
 -- Clear Highlights
 vim.keymap.set('n', '<leader>l', ':nohl<CR>', { silent = true, desc = 'clear highlights' })
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Center window when navigating
 vim.keymap.set('n', '<C-u>', '<C-u>zz')

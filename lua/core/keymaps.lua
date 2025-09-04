@@ -35,12 +35,12 @@ vim.keymap.set('n', '<leader>cl', ':cfirst<CR>zz', { silent = true })
 vim.keymap.set('n', '<leader>cf', ':clast<CR>zz', { silent = true })
 
 -- Edit inside and outside of double quotes
-vim.keymap.set('o', 'iq', 'i"', { noremap = true, silent = true })
-vim.keymap.set('o', 'aq', 'a"', { noremap = true, silent = true })
+vim.keymap.set('o', 'iq', 'i"', { silent = true })
+vim.keymap.set('o', 'aq', 'a"', { silent = true })
 
 -- Select inside and outside of double quotes
-vim.keymap.set('x', 'iq', 'i"', { noremap = true, silent = true })
-vim.keymap.set('x', 'aq', 'a"', { noremap = true, silent = true })
+vim.keymap.set('x', 'iq', 'i"', { silent = true })
+vim.keymap.set('x', 'aq', 'a"', { silent = true })
 
 -- :find
 vim.keymap.set('n', '<leader>f', ':fin ')

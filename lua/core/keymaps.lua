@@ -65,3 +65,6 @@ vim.keymap.set('v', '<M-k>', ":m '<-2<CR>gv=gv", { silent = true })
 -- Move line up and down in insert mode
 vim.keymap.set('i', '<M-j>', '<Esc>:m .+1<CR>==gi', { silent = true })
 vim.keymap.set('i', '<M-k>', '<Esc>:m .-2<CR>==gi', { silent = true })
+
+-- Fix indentations for file
+vim.keymap.set('n', '<leader>=', 'ggVG=')

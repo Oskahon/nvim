@@ -72,13 +72,17 @@ vim.opt.wrap = false
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
--- Set path to ** for :find
+-- Add ** to path for :find
 -- This might cause issues with larger folder structures?
-vim.opt.path = ".,,**"
+-- Remove ** and instead use whitelisting of folders if 
+-- find speed becomes a problem
+vim.opt.path:append {
+    '**',
+}
 
 -- Set wildignore
 vim.opt.wildignore = {
-    "*/node_modules/*",
-    "*/libraries/*",
-    "*/.git/*",
+    '*/node_modules/*',
+    '*/libraries/*',
+    '*/.git/*',
 }

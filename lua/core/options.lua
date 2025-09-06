@@ -74,4 +74,11 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 -- Set path to ** for :find
 -- This might cause issues with larger folder structures?
-vim.opt.path = "**"
+vim.opt.path = ".,,**"
+
+-- Set wildignore
+vim.opt.wildignore = {
+    "*/node_modules/*",
+    "*/libraries/*",
+    "*/.git/*",
+}

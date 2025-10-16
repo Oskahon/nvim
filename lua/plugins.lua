@@ -41,6 +41,20 @@ require("lazy").setup({
     end,
   },
 
+  -- Lualine for a nicer looking statusline
+  {
+      "nvim-lualine/lualine.nvim",
+      event = "BufEnter",
+      dependencies = { "nvim-tree/nvim-web-devicons" },
+      config = function()
+          require("lualine").setup({
+              options = {
+                  theme = "tokyonight",
+              }
+          })
+      end,
+  },
+
   -- Treesitter for advanced syntax highlighting and more
   -- 'nvim-treesitter/nvim-treesitter' provides a parser-based syntax engine
   {

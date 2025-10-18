@@ -1,8 +1,9 @@
--- Vaatii toimiakseen C kääntäjän
--- Käytä Esim. Developer Powershell for VS 2022
--- Tällöin käytössä cl
 -- File: lua/plugins.lua
 
+-- Vaatii toimiakseen C kääntäjän
+-- Käytä Windowsin puolella esim. Developer Powershell for VS 2022
+-- Tällöin käytössä cl
+--
 -- This file can be loaded by calling `require('plugins')` from your `init.lua`
 
 -- It will automatically install lazy.nvim if it's not already installed.

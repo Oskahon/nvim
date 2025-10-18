@@ -26,6 +26,9 @@ vim.opt.sidescrolloff = 8 -- Same for horizontal scrolling
 -- Show signs in the number column?
 vim.opt.signcolumn = "number"
 
+-- Hide command line when not in use(the line under the status line)
+vim.o.cmdheight=0
+
 -- [[ Tabs and Indentation ]]
 -- Set tabstop
 vim.opt.tabstop = 4

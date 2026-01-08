@@ -88,4 +88,5 @@ vim.opt.wildignore = {
     '*/node_modules/*',
     '*/libraries/*',
     '*/.git/*',
+    '*/target/*',
 }

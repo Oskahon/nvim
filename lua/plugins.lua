@@ -61,6 +61,7 @@ require("lazy").setup({
   {
     "nvim-treesitter/nvim-treesitter",
     -- The build step is recommended to compile and update parsers
+    branch = "master", -- branch is archived but can't get main branch to work
     build = ":TSUpdate",
     config = function()
       -- When we configure treesitter, we need to require it first

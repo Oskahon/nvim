@@ -95,6 +95,8 @@ require("lazy").setup({
       })
     end,
   },
+
+  "neovim/nvim-lspconfig",
   
   -- You can add more plugins here, for example:
   -- { "tpope/vim-fugitive" },

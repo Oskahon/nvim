@@ -68,3 +68,6 @@ vim.keymap.set('i', '<M-k>', '<Esc>:m .-2<CR>==gi', { silent = true })
 
 -- Fix indentations for file
 vim.keymap.set('n', '<leader>=', 'ggVG=')
+
+-- 
+vim.keymap.set('i', '<C-Space>', '<C-x><C-o>', { silent = true })

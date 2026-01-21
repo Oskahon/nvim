@@ -23,6 +23,9 @@ vim.o.cursorline = true
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8 -- Same for horizontal scrolling
 
+-- Mouse scroll speed
+vim.opt.mousescroll = "ver:1,hor:1"
+
 -- Show signs in the number column?
 vim.opt.signcolumn = "number"
 

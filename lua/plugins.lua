@@ -1,11 +1,5 @@
 -- File: lua/plugins.lua
 
--- Vaatii toimiakseen C kääntäjän
--- Käytä Windowsin puolella esim. Developer Powershell for VS 2022
--- Tällöin käytössä cl
---
--- This file can be loaded by calling `require('plugins')` from your `init.lua`
-
 -- It will automatically install lazy.nvim if it's not already installed.
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then

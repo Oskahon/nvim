@@ -19,6 +19,9 @@ vim.opt.relativenumber = true
 -- Highlight the linenumber your cursor is on
 vim.o.cursorline = true
 
+-- Show colorcolumn
+vim.opt.colorcolumn = "80"
+
 -- Scrolling Offset
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8 -- Same for horizontal scrolling

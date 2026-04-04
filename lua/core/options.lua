@@ -33,7 +33,7 @@ vim.opt.mousescroll = "ver:1,hor:1"
 vim.opt.signcolumn = "number"
 
 -- Hide command line when not in use(the line under the status line)
-vim.o.cmdheight=0
+-- vim.o.cmdheight=0
 
 -- [[ Tabs and Indentation ]]
 -- Set tabstop
@@ -77,9 +77,18 @@ vim.opt.linebreak = true -- Wrap lines at 'breakat' characters (like spaces) ins
 vim.opt.wrap = false
 
 -- [[ Themes etc. ]]
+
+-- Set the Theme
+vim.cmd.colorscheme("koehler")
+
 -- Transparent background
-vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+--
+local groups = { "Normal", "NormalFloat", "NormalNC", "EndOfBuffer", "LineNr", "SignColumn" }
+for _, group in ipairs(groups) do
+    vim.api.nvim_set_hl(0, group, { bg = "none" })
+end
 
 -- Add ** to path for :find
 -- This might cause issues with larger folder structures?

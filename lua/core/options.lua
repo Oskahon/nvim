@@ -14,7 +14,7 @@ vim.opt.syntax = "on"
 
 -- Linenumbers
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- Highlight the linenumber your cursor is on
 vim.o.cursorline = true
